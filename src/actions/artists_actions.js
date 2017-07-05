@@ -24,7 +24,7 @@ export const playSong = (song) => {
 
 // api
 function getTopArtists() {
-  return fetch('https://api-v2.hearthis.at/feed/?type=popular&page=1&count=5')
+  return fetch('https://api-v2.hearthis.at/feed/?type=popular&page=1&count=20')
     .then(res => res.json())
     .catch(error => { throw (error) });
 };
